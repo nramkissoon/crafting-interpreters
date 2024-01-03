@@ -2,7 +2,10 @@ package lox;
 
 import lox.Expr.Assign;
 import lox.Expr.Call;
+import lox.Expr.Get;
 import lox.Expr.Logical;
+import lox.Expr.Set;
+import lox.Expr.This;
 import lox.Expr.Variable;
 
 class AstPrinter implements Expr.Visitor<String> {
@@ -68,5 +71,23 @@ class AstPrinter implements Expr.Visitor<String> {
   public String visitCallExpr(Call expr) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'visitCallExpr'");
+  }
+
+  @Override
+  public String visitGetExpr(Get expr) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'visitGetExpr'");
+  }
+
+  @Override
+  public String visitSetExpr(Set expr) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'visitSetExpr'");
+  }
+
+  @Override
+  public String visitThisExpr(This expr) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'visitThisExpr'");
   }
 }
