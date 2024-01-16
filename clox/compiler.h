@@ -5,5 +5,6 @@
 #include "vm.h"
 
 bool compile(const char* source);
+void markCompilerRoots();
 
 #endif
