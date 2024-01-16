@@ -1,6 +1,10 @@
 {
   "files.associations": {
     "TODO": "todo",
-    "object.h": "c"
-  }
+    "object.h": "c",
+    "type_traits": "c"
+  },
+  "cSpell.words": [
+    "Upvalue"
+  ]
 }

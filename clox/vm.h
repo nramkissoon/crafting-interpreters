@@ -10,7 +10,7 @@
 
 // A CallFrame represents a single ongoing function call.
 typedef struct {
-  ObjFunction* function;
+  ObjClosure* closure;
   uint8_t* ip;
   Value* slots; //points into the VM’s value stack at the first slot that this function can use
 } CallFrame;
@@ -24,6 +24,7 @@ typedef struct
   Value *stackTop;
   Table globals;
   Table strings;
+  ObjUpvalue* openUpvalues;
   Obj* objects;
 } VM;
 
